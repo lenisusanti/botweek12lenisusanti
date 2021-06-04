@@ -7,7 +7,7 @@ const cls_model = require('./sdk/cls_model.js');
 
 // Bot Setting
 const TelegramBot = require('node-telegram-bot-api');
-const token = '1877669223:AAFhUivKLRH-FVt7CeEuJEOfcV-sibI1xiY'
+const token = '1875247508:AAFhxF7H51jgGY_PAcF1xK-DOsOQbMr7Qcs'
 const bot = new TelegramBot(token, {polling: true});
 
 
@@ -57,7 +57,7 @@ bot.on('message', (msg) => {
                 );
                 bot.sendMessage(
                     msg.chat.id,
-                    `klasifikasi tegangan ${jres2}`
+                    `Klasifikasi Tegangan adalah ${jres2}`
                 );   
             }) 
         })
